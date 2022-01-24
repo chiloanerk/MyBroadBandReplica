@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Link to external stylesheet-->
+    <!--Link to brand icons found at fontawesome website-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!--Where the site will be contained-->
+    <div class="container">
+        <!--The header that houses the logo and title-->
+        <header>
+            <div class="header-input">
+                <input type="text" id="email-input" placeholder="Your email address">
+                <button type="submit" id="email-button">Subscribe</button>
+            </div>
+            <div class="header-logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                    <li><a href="#">What's Next</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--Navigation bar-->
+        <nav>
+            <ul>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">PRESS OFFICE</a></li>
+                <li><a href="#">BREAKING NEWS</a></li>
+                <li><a href="#">FORUM</a></li>
+                <li><a href="#">INDUSTRY NEWS</a></li>
+                <li><a href="#">SPEED TEST</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+        <!--Effectively the body of the site, this holds the article and side bar area
+            I chose this method to make it easy for me to style-->
+        <div class="content-area">
+            <!--Article section-->
+            <div class="article">
+                <div class="article-title">
+                    <h1>Phone 13 screens going pink — Apple says it’s just a bug</h1>
+                    <p class="author">Tom Hanks 24 January 2022</p>
+                </div>
+                <img src="images/iphonepink.jpg" alt="The pink phone screen" id="article-image">
+                <div class="article-social">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp-square"></i></a></li>
+                        <li><a href=""><i class="fas fa-envelope-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <div class="article-input">
+                        <input type="text" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+                <div class="article-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora exercitationem
+                        deserunt dolore accusantium maxime quia sit, quod possimus! Voluptate?</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia, velit nulla
+                        architecto dignissimos nihil tenetur, ut, ex nisi eaque esse incidunt fuga inventore impedit
+                        perferendis ducimus praesentium dolore hic quisquam itaque nobis doloremque amet cupiditate
+                        aspernatur! Nostrum, maxime vel!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusantium ex cum maiores,
+                        libero ducimus exercitationem delectus explicabo, enim reiciendis beatae facere facilis vitae
+                        consequatur!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quam dolores laudantium inventore
+                        provident perspiciatis nulla illo! Consequatur quis ipsum saepe ipsam asperiores illo eos
+                        tempore veritatis, rem autem aut similique eaque provident explicabo natus est quos! Veniam
+                        aliquam illo animi, distinctio numquam quo reiciendis?</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora exercitationem
+                        deserunt dolore accusantium maxime quia sit, quod possimus! Voluptate?</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia, velit nulla
+                        architecto dignissimos nihil tenetur, ut, ex nisi eaque esse incidunt fuga inventore impedit
+                        perferendis ducimus praesentium dolore hic quisquam itaque nobis doloremque amet cupiditate
+                        aspernatur! Nostrum, maxime vel!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusantium ex cum maiores,
+                        libero ducimus exercitationem delectus explicabo, enim reiciendis beatae facere facilis vitae
+                        consequatur!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quam dolores laudantium inventore
+                        provident perspiciatis nulla illo! Consequatur quis ipsum saepe ipsam asperiores illo eos
+                        tempore veritatis, rem autem aut similique eaque provident explicabo natus est quos! Veniam
+                        aliquam illo animi, distinctio numquam quo reiciendis?</p>
+                    <br>
+                </div>
+                <div class="next-article">
+                    <h2>Now Read: <a href="#">New Samsung Galaxy S22 prices leaked</a></h2>
+                </div>
+                <div class="tags">
+                    <ul>
+                        <li><a href="#">APPLE</a></li>
+                        <li><a href="#">ANDROID</a></li>
+                        <li><a href="#">SAMSUNG</a></li>
+                        <li><a href="#">IPHONE</a></li>
+                    </ul>
+                </div>
+                <div class="article-share">
+                    <button class="fb">SHARE ON FACEBOOK</button>
+                    <button class="tw">SHARE ON TWITTER</button>
+                </div>
+                <div class="forum-link">
+                    <button>SHARE YOUR THOUGHTS: IPHONE 13 SCREENS GOING PINK...</button>
+                </div>
+
+
+            </div>
+            <!--Side content area-->
+            <div class="sidebar">
+                <div class="follow-side">
+                    <h2>Follow Us</h2>
+                </div>
+                <div class="follow-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-rss"></i>
+                    <i class="fab fa-android"></i>
+                    <i class="fab fa-apple"></i>
+                </div>
+                <div class="side-input">
+                    <input type="text" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </div>
+                <div class="poll">
+                    <h1>POLL</h1>
+                    <h3>Which local hosting company would you use to host a website?</h3>
+                        <label class="container-poll">Xneelo
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-poll">Domains
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-poll">1-grid
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-poll">Afrihost
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-poll">Axxess
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-poll">RSAWEB
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-poll">Cybersmart
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <button class="vote">VOTE</button>
+                </div>
+            </div>
+        </div>
+        <!--The big black footer with it's contents-->
+        <footer>
+
+        </footer>
+        <!--The logos that are found at the bottom for their sister sites-->
+        <div class="partners">
+
+        </div>
+    </div>
+</body>
+
+</html>

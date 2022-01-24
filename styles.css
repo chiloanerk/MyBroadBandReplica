@@ -8,20 +8,311 @@
 /*The grey you see around the sides*/
 body {
     background-color: #999;
+    display: block;
 }
 
 /*The website area*/
 .container {
     width: 1020px;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
-    margin: auto;
+    border-top: solid black thick;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 header {
     width: 100%;
     height: 63px;
     background-color: #888;
-    border-top: solid black thick;
     padding: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;     /*Thise spaces out the divs horizontally along the width*/
+}
+.header-input {
+    margin-top: 15px;       /*to be centered vertically with the logo*/
+}
+input {
+    width: 115px;
+    height: 36px;
+    border-style: hidden;
+    border: solid thin #777;
+}
+button {
+    width: 70px;
+    height: 37px;
+    margin-left: -5px;      /*Bring closer to the input textbox*/
+    background-color: #a21a1a;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
+
+.header-logo img {
+    width: 300px;
+    height: 58px;
+}
+.social-links {
+    margin-top: 20px;       /*to be centered vertically with the logo*/
+}
+.social-links li {
+    display: inline;        /*Make list items display horizontally*/
+}
+
+.social-links li a {
+    color: black;
+    text-decoration: none;      /*Remove any styling*/
+}
+
+nav {
+    background-color: #777;    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;  
+    list-style: none;  
+}
+nav li {
+    padding-top: 20px;
+    padding-bottom: 20px;       /*Make the links a bit bigger*/
+    font-weight: 500;
+}
+
+nav li:hover {
+    border-bottom: solid 3px black; 
+    transition: 334ms;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.article {
+    margin-top: 20px;
+    width: 65%;
+    border: solid thin black;
+    background-color: #998;
+    padding: 5px;
+    clear: both;
+    display: block;
+    float: left;
+}
+
+#article-image {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.article-social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-social li {
+    display: inline;
+}
+.article-social i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.article-social a {
+    text-decoration: none;
+}
+
+.article-text {
+    margin-top: 20px;
+}
+
+.next-article {
+    padding: 20px;
+    border-top: solid thin black;
+    border-bottom: solid thin black;
+    margin-top: 20px;
+}
+.next-article a{
+    text-decoration: none;
+}
+.tags {
+    margin-top: 20px;
+}
+.tags ul {
+    display: flex;
+    gap: 10px;                         /*align horizontally with a gap in between*/
+    list-style: none;
+    
+}
+.tags li{
+    border: solid thin black;       /*Button like styling on the tags*/
+    padding: 5px 20px 5px 20px; 
+}
+.tags li a{
+    color: black;
+    text-decoration: none;
+}
+.tags li:hover {
+    background-color: black;
+}
+.tags li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.article-share {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-left: 5px;
+}
+
+.article-share button {
+    width: 100%;
+    border: solid thin black;
+    color: #fff;
+    font-weight: 700;
+}
+.article-share button:hover {
+    background-color: black;
+}
+.fb {
+    background-color: #3B5998;      /*facebook button*/
+}
+.tw {
+    background-color: #55ACEE;      /*twitter button*/
+}
+
+.forum-link {
+    margin-top: 20px;
+}
+.forum-link button{
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/*Side bar starts here*/
+
+.sidebar {
+    display: block;
+    border: solid thin green;
+    width: 31.5%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.follow-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow-icons i {
+    font-size: 1.6rem;
+    border: solid thin black;
+    padding: 10px;
+}
+.side-input {
+    margin-top: 20px;
+    width: 100%;
+}
+.side-input input {
+    width: 74%;
+}
+.side-input button {
+    width: 24%;
+}
+
+/*Radio buttons for the poll*/
+
+/* The container */
+.poll {
+margin-top: 20px;
+}
+
+.poll h3 {
+    margin-top: 20px;
+}
+.container-poll {
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+.container-poll input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  /* On mouse-over, add a grey background color */
+.container-poll:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the radio button is checked, add a blue background */
+.container-poll input:checked ~ .checkmark {
+    background-color: #777;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+.container-poll input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+.container-poll .checkmark:after {
+    top: 6px;
+   left: 6px;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: black;
+}
+
+.vote {
+    margin-top: 30px;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    color: black;
+    border: black 1px solid;
 }
