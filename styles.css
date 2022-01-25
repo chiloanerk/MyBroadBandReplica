@@ -308,13 +308,13 @@ margin-top: 20px;
     height: 15px;
     width: 15px;
     border: solid 1px #2b2d32;
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 50%;
   }
 
   /* On mouse-over, add a grey background color */
 .container-poll:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #eee;
   }
 
   /* When the radio button is checked, add a blue background */
@@ -396,5 +396,8 @@ footer li {
 
 footer li a{
     text-decoration: none;
+    color: #ccc;
+}
+footer li a:hover {
     color: #fff;
 }
