@@ -88,11 +88,13 @@ nav li {
     padding-top: 20px;
     padding-bottom: 20px;       /*Make the links a bit bigger*/
     font-weight: 500;
+    border-bottom: solid 3px #fff;
+    transition: 500ms;
 }
 
 nav li:hover {
     border-bottom: solid 3px #2b2d32; 
-    transition: 334ms;
+    transition: 500ms;
 }
 
 nav li a {
