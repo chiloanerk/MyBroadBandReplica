@@ -118,6 +118,7 @@ nav li a {
     display: block;
 }
 
+/*div for the social media buttons above article*/
 .article-social {
     margin-top: 20px;
     display: flex;
@@ -130,6 +131,12 @@ nav li a {
 .article-social i {
     font-size: 2rem;
     margin-right: 10px;
+    transition: 300ms;
+}
+/*Add hover effect to turn icons dark and a smooth transition*/
+.article-social i:hover {
+    color: #2b2d32;
+    transition: 300ms;
 }
 
 .article-social a {
@@ -161,13 +168,16 @@ nav li a {
 .tags li{
     border: solid thin #2b2d32;       /*Button like styling on the tags*/
     padding: 5px 20px 5px 20px; 
+    transition: 300ms;
 }
 .tags li a{
     color: #2b2d32;
     text-decoration: none;
 }
-.tags li:hover {
+
+.tags li:hover {                        /*hover effects on tag buttons*/
     background-color: #2b2d32;
+    transition: 300ms;
 }
 .tags li a:hover{
     color: #fff;
@@ -187,9 +197,11 @@ nav li a {
     border: solid thin #2b2d32;
     color: #fff;
     font-weight: 700;
+    transition: 300ms;
 }
 .article-share button:hover {
     background-color: #2b2d32;
+    transition: 300ms;
 }
 .fb {
     background-color: #3B5998;      /*facebook button*/
@@ -227,7 +239,7 @@ nav li a {
     margin-left: 15px;
 
 }
-
+/*Social media buttons*/
 .follow-icons i {
     font-size: 1.3rem;
     border: solid thin #eee;
@@ -236,6 +248,11 @@ nav li a {
     text-align: center;
     height: 20px;
     padding: 10px;
+    transition: 300ms;
+}
+.follow-icons i:hover {
+    background-color: #999;
+    transition: 300ms;
 }
 .side-input {
     margin-top: 20px;
@@ -334,6 +351,14 @@ margin-top: 20px;
     font-family: sans-serif;
     font-weight: 600;
     font-size: 1.2em;
+    transition: 300ms;
+}
+
+/*Add dark background on hover*/
+.vote:hover {
+    background-color: #2b2d32;
+    color: #fff;
+    transition: 300ms;
 }
 
 .poll p {
